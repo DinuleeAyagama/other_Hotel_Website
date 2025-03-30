@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+    <meta name="keywords" content="hotel, boston hotel, new england hotel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>THE GREEN ORCHID RESORT | About</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/logo3.png" alt="Green Orchid Logo" class="nav-logo">
+                        THE GREEN ORCHID
+                    </a>
+                </h1>
+                
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="about.html">About</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+   </header>
+
+   <section id="about">
+    <div class="container">
+        <h1 class="section-title">About Us</h1>
+        <p>
+            Welcome to <strong>The Green Orchid Resort</strong>, a luxury retreat 
+            designed for ultimate comfort and relaxation. Nestled amidst scenic 
+            landscapes, our hotel offers world-class hospitality, elegant accommodations, 
+            and eco-friendly initiatives. Whether you're here for a peaceful getaway 
+            or a business trip, we ensure an unforgettable experience.
+            Our resort features spacious suites with breathtaking views, 
+            a rejuvenating spa, a state-of-the-art fitness center, and 
+            an exquisite dining experience with flavors from around 
+            the world. We take pride in our commitment to sustainability, 
+            incorporating eco-friendly practices in our daily operations to provide 
+            a guilt-free luxury stay.
+            From personalized concierge services to exciting local excursions,
+            we strive to make every moment special.
+            Whether you seek adventure, tranquility, or indulgence, 
+            The Green Orchid Resort is your perfect escape. Let us create 
+            lasting memories for you in a place where nature and luxury blend seamlessly. 🌿✨
+        </p>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <div class="logo"><span class="highlight"> THE GREEN ORCHID </span></div>
+                <p><strong>Hotel and Resort</strong></p>
+                <p>No. 543, Orchid lane, Kandy road, Sri Lanka</p>
+                <p>Tel: +947548651 / 0355487960</p>
+            </div>
+    
+            <div class="footer-section links">
+                <div class="section-title">Related Links</div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <div class="section-title">Contact Us</div>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    
+            <div class="footer-section newsletter">
+                <div class="section-title">Subscribe to Newsletter</div>
+                <input type="email" placeholder="Email Address" required>
+                <button class="subscribe-btn">Subscribe</button>
+                
+                <div class="section-title">Follow Us</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer id="main-footer">
+        <p>The Green Orchid Resort &copy; 2025, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            const navbar = document.querySelector('#navbar ul');
+            navbar.classList.toggle('show');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#navbar ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.querySelector('#navbar ul').classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
